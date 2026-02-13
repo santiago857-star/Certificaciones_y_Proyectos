@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paradise Nursery - Tienda de Plantas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=64&auto=format&fit=crop&crop=faces" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="#home" id="brandLink"><img src="" alt="" style="display:none"/>Paradise Nursery</a>
+    </div>
+    <nav class="main-nav">
+      <a href="#home" class="nav-link">Inicio</a>
+      <a href="#products" class="nav-link">Productos</a>
+      <a href="#cart" class="nav-link">Carrito</a>
+      <button id="cartBtn" class="cart-btn" aria-label="Carrito">
+         <span id="cartCount">0</span>
+      </button>
+    </nav>
+  </header>
+  <main id="app">
+
+    
+    <section id="home" class="page landing">
+      <div class="landing-overlay">
+        <h1>Paradise Nursery</h1>
+        <p class="lead">Plantas de interior cuidadosamente seleccionadas para embellecer tu hogar y mejorar tu bienestar.</p>
+        <p class="lead small">Plantas aromáticas, medicinales y de follaje — perfectas para principiantes y aficionados.</p>
+        <button id="startBtn" class="primary-btn">Comenzar</button>
+      </div>
+    </section>
+
+
+    <section id="products" class="page container hidden">
+      <h2>Listado de Productos</h2>
+      <div id="categories"></div>
+    </section>
+
+   
+    <section id="cart" class="page container hidden">
+      <h2>Tu carrito</h2>
+      <div id="cartSummary" class="cart-summary">
+        <div>Total de artículos: <strong id="totalItems">0</strong></div>
+        <div>Total a pagar: <strong id="totalPrice">0.00 USD</strong></div>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-actions">
+        <a href="#products"><button class="secondary-btn">Continuar comprando</button></a>
+        <button id="payBtn" class="primary-btn">Pagar</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Paradise Nursery — Proyecto Final</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
